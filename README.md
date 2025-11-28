@@ -76,7 +76,8 @@ Run the pipeline:
 ```bash
 python model.py --epochs 300 --batch 16
 
-3️⃣ Evaluation
+
+## 3️⃣ Evaluation
 
 Generated outputs include:
 
@@ -90,6 +91,8 @@ All saved in:
 outputs/
 saved_model/
 
+
+
 ## 📊 Results (Example)
 
 MSE: Low (good fit)
@@ -100,11 +103,15 @@ Nitrous Oxide emission regression stable
 
 Learned feature relationships consistent with expected engine behavior
 
+
+
 ## 🔮 Prediction on New Engine Data
 Use:
 python predict.py --model saved_model/engine_dnn.h5 --scaler saved_model/scaler.joblib --input new_engine_data.csv
 Outputs saved to:
 outputs/predictions.csv
+
+
 
 ## 🚀 Google Colab Ready
 
@@ -122,6 +129,8 @@ Saving the .h5 model
 
 Perfect for fast experimentation and cloud-based computation.
 
+
+
 ## 🛠 Requirements
 pandas
 numpy
@@ -132,8 +141,12 @@ seaborn
 openpyxl
 joblib
 
+
+
 ## Install:
 pip install -r requirements.txt
+
+
 
 ## ⭐ Summary
 
