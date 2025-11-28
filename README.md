@@ -58,7 +58,7 @@ The default DNN uses:
 
 ## ⚙️ How It Works
 
-### 1️⃣ Data Loading & Preprocessing
+### Data Loading & Preprocessing
 - Excel inputs are loaded from `inputs_Engine.xlsx` and `output_Engine.xlsx`.
 - Files are **transposed automatically** to convert them into row-major format.
 - Columns are renamed:
@@ -70,14 +70,16 @@ The default DNN uses:
 - Missing rows are removed.
 - Inputs and outputs are standardized using **StandardScaler**.
 
-### 2️⃣ Model Training
+## Model Training
+
 Run the pipeline:
 
 ```bash
 python model.py --epochs 300 --batch 16
 
 
-## 3️⃣ Evaluation
+
+## Evaluation
 
 Generated outputs include:
 
@@ -102,7 +104,6 @@ Predicted Torque closely matches actual
 Nitrous Oxide emission regression stable
 
 Learned feature relationships consistent with expected engine behavior
-
 
 
 ## 🔮 Prediction on New Engine Data
@@ -130,7 +131,6 @@ Saving the .h5 model
 Perfect for fast experimentation and cloud-based computation.
 
 
-
 ## 🛠 Requirements
 pandas
 numpy
@@ -142,15 +142,12 @@ openpyxl
 joblib
 
 
-
 ## Install:
 pip install -r requirements.txt
-
 
 
 ## ⭐ Summary
 
 This project demonstrates a clean, industry-ready workflow for multi-output regression using deep learning. The model captures nonlinear relationships between engine parameters and their performance outputs, producing accurate predictions suitable for optimization, simulation, and control applications.
-
 
 
