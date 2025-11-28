@@ -9,7 +9,7 @@ The pipeline automatically handles transpose, cleaning, coercing to numeric type
 
 ---
 
-## 🔍 Project Overview
+##  Project Overview
 
 This repository demonstrates a complete **multi-output regression** workflow, including:
 
@@ -26,7 +26,7 @@ The model predicts:
 
 ---
 
-## 📁 Repository Structure
+##  Repository Structure
 engine-prediction-dnn/
 │── README.md
 │── model.py # Training pipeline
@@ -42,7 +42,7 @@ engine-prediction-dnn/
 
 ---
 
-## 🧠 Model Architecture
+##  Model Architecture
 
 The default DNN uses:
 
@@ -56,7 +56,7 @@ The default DNN uses:
 
 ---
 
-## ⚙️ How It Works
+## How It Works
 
 ### Data Loading & Preprocessing
 - Excel inputs are loaded from `inputs_Engine.xlsx` and `output_Engine.xlsx`.
@@ -71,16 +71,10 @@ The default DNN uses:
 - Inputs and outputs are standardized using **StandardScaler**.
 
 ## Model Training
-
 Run the pipeline:
-
-```bash
 python model.py --epochs 300 --batch 16
 
-
-
 ## Evaluation
-
 Generated outputs include:
 
 ✔ Regression performance metrics
@@ -93,9 +87,7 @@ All saved in:
 outputs/
 saved_model/
 
-
-
-## 📊 Results (Example)
+##  Results (Example)
 
 MSE: Low (good fit)
 
@@ -105,16 +97,13 @@ Nitrous Oxide emission regression stable
 
 Learned feature relationships consistent with expected engine behavior
 
-
-## 🔮 Prediction on New Engine Data
+##  Prediction on New Engine Data
 Use:
 python predict.py --model saved_model/engine_dnn.h5 --scaler saved_model/scaler.joblib --input new_engine_data.csv
 Outputs saved to:
 outputs/predictions.csv
 
-
-
-## 🚀 Google Colab Ready
+##  Google Colab Ready
 
 The file keras_colab.py automates:
 
@@ -130,8 +119,7 @@ Saving the .h5 model
 
 Perfect for fast experimentation and cloud-based computation.
 
-
-## 🛠 Requirements
+##  Requirements
 pandas
 numpy
 tensorflow
@@ -141,12 +129,10 @@ seaborn
 openpyxl
 joblib
 
-
 ## Install:
 pip install -r requirements.txt
 
-
-## ⭐ Summary
+##  Summary
 
 This project demonstrates a clean, industry-ready workflow for multi-output regression using deep learning. The model captures nonlinear relationships between engine parameters and their performance outputs, producing accurate predictions suitable for optimization, simulation, and control applications.
 
